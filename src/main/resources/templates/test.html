@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+<body>
+    <h3 th:text="${name}"></h3>
+    <div shiro:hasPermission="user:add">
+        增加页面<a href="add">add</a>
+    </div>
+    <div shiro:hasPermission="user:update">
+        更新页面<a href="update">update</a>
+    </div>
+    <a href="toLogin">登录</a>
+</body>
+</html>
